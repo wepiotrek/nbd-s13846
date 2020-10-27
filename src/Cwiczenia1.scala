@@ -105,6 +105,9 @@ object Cwiczenia1 {
     nowaLista(list, List.empty[Int])
   }
   //9
+  def plusJeden(list: List[Int]) = list.map(x => x + 1)
+  //10
+
   def main(args: Array[String]): Unit = {
     println("Hello, world")
     println(dniForNaP(dniTygodnia))
