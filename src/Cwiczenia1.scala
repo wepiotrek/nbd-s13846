@@ -1,9 +1,7 @@
-import scala.::
 import scala.annotation.tailrec
 
 object Cwiczenia1 {
   val dniTygodnia = List("Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela")
-
   //1a
   def dniFor(dni: List[String]): String = {
     var out = ""
@@ -34,7 +32,13 @@ object Cwiczenia1 {
   //2b
   def dniRekWst[T](dni: List[T]): String = dni match {
     case Nil => ""
-    case _ => dniRekWst(dni.tail) + ", " + dni.head
+    case _ => {
+      var out = dniRekWst(dni.tail)
+      if(dni.tail.nonEmpty)
+        out+=", "
+      out+= ""+dni.head
+      out
+    }
   }
   //3
   def dniTail[T](dni: List[T]): String = {
@@ -113,9 +117,21 @@ object Cwiczenia1 {
       .map(x => x.abs)
   }
   def main(args: Array[String]): Unit = {
-    println("Hello, world")
-    println(dniForNaP(dniTygodnia))
-    println(dniWhile(dniTygodnia))
+    println("Zadanie 1a:"+dniFor(dniTygodnia))
+    println("Zadanie 1b:"+dniForNaP(dniTygodnia))
+    println("Zadanie 1c:"+dniWhile(dniTygodnia))
+    println("Zadanie 2a:"+dniRek(dniTygodnia))
+    println("Zadanie 2b:"+dniRekWst(dniTygodnia))
+    println("Zadanie 3:"+dniTail(dniTygodnia))
+    println("Zadanie 4a:"+dniFoldl(dniTygodnia))
+    println("Zadanie 4b:"+dniFoldr(dniTygodnia))
+    println("Zadanie 4c:"+dniForNaP(dniTygodnia))
+    println("Zadanie 5: \n"+produkty+"\n"+produktyRabat)
+    println("Zadanie 6:"); printKrotka(krotka)
+    println("Zadanie 7: 5 dzień -> "+getList(dniTygodnia, 4)+" 8 dzień->"+getList(dniTygodnia, 8))
+    println("Zadanie 8: "+bezZer(List(4,5,1,0,0,10,3,0)))
+    println("Zadanie 9: "+plusJeden(List(-1, 0, 1, 2, 3)))
+    println("Zadanie 10: "+filtr(List(-4.1,-8.3, -1.2, 3, 55.9, -3.1)))
   }
 
 }
