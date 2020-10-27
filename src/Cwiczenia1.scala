@@ -92,7 +92,18 @@ object Cwiczenia1 {
     }
   }
   //8
+  def bezZer(list: List[Int]): List[Int] = {
 
+    @tailrec
+    def nowaLista(list: List[Int], listR: List[Int]): List[Int] = list match{
+      case Nil => listR
+      case head :: tail => {
+        if(head == 0) nowaLista(tail, listR)
+        else nowaLista(tail, listR.appended(head))
+      }
+    }
+    nowaLista(list, List.empty[Int])
+  }
   def main(args: Array[String]): Unit = {
     println("Hello, world")
     println(dniForNaP(dniTygodnia))
