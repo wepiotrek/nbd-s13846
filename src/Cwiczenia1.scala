@@ -91,9 +91,8 @@ object Cwiczenia1 {
       case _: Exception => None
     }
   }
-  //println(getList(dniTygodnia, 9))
+  //8
 
-  //printKrotka(krotka)
   def main(args: Array[String]): Unit = {
     println("Hello, world")
     println(dniForNaP(dniTygodnia))
