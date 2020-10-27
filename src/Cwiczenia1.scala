@@ -84,8 +84,16 @@ object Cwiczenia1 {
     println(krotka._1 + " - " + krotka._2 + " - " + krotka._3)
   }
   //7
+  def getList[T](l: List[T], i: Int): Option[T] = {
+    try {
+      Some(l(i))
+    } catch {
+      case _: Exception => None
+    }
+  }
+  //println(getList(dniTygodnia, 9))
 
-  printKrotka(krotka)
+  //printKrotka(krotka)
   def main(args: Array[String]): Unit = {
     println("Hello, world")
     println(dniForNaP(dniTygodnia))
