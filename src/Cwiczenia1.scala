@@ -107,7 +107,11 @@ object Cwiczenia1 {
   //9
   def plusJeden(list: List[Int]) = list.map(x => x + 1)
   //10
-
+  def filtr(list: List[Double]): List[Double] = {
+    list.filter(x => x >= -5)
+      .filter(x => x <= 12)
+      .map(x => x.abs)
+  }
   def main(args: Array[String]): Unit = {
     println("Hello, world")
     println(dniForNaP(dniTygodnia))
