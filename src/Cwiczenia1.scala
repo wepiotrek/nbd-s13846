@@ -104,6 +104,7 @@ object Cwiczenia1 {
     }
     nowaLista(list, List.empty[Int])
   }
+  //9
   def main(args: Array[String]): Unit = {
     println("Hello, world")
     println(dniForNaP(dniTygodnia))
