@@ -1,3 +1,6 @@
+import scala.Int.int2long
+import scala.math.BigInt.int2bigInt
+
 object Cwiczenia2 {
   //Zadanie 1
   def opisDnia(day: String): String = day.toUpperCase match  {
@@ -82,8 +85,40 @@ object Cwiczenia2 {
   println(greetPerson(osoba3))
   println(greetPerson(osoba4))
   println(greetPerson(osoba5))
+//Zadanie 4
+  def func(n: Int): Int = n+n
+  def potrojnie(n: Int, func: Int => Int) = {
+    func(func(func(n)))
+  }
+  println(potrojnie(9, func)) //5+5=10 -> 10+10=20 -> 20+20=40 (równważność mnożenia przez 8)
+  //Zadanie 5
+  class Osoba5(val imie: String, val nazwisko: String){
+    protected var _podatek = 0.2d
+    def podatek = _podatek
+  }
 
-
+  trait Pracownik extends Osoba5 {
+    private var _pensja = 0d
+    def pensja = _pensja-(_pensja*podatek)
+    def pensja_=(n: Double) ={
+      if(n > 0)
+        _pensja = n
+      else throw new ArithmeticException("Niewolnidzstwo zakazane!")
+    }
+  }
+  trait Student extends Osoba5 {
+    override def podatek: Double = 0
+  }
+  trait Nauczyciel extends Pracownik {
+    override def podatek: Double =  0.1
+  }
+  val student = new Osoba5("Piotr", "Wezgraj") with Student
+  val nauczyciel = new Osoba5("Mitsubihi", "Hoto") with Nauczyciel
+  val pracownik = new Osoba5("Elżbieta", "Mrowisko") with Pracownik
+  pracownik.pensja=1000
+  nauczyciel.pensja=5000
+  println(pracownik.pensja)// 800 to 1000 minus 20% podatku
+  println(nauczyciel.pensja)//4500 to 5000 minus 10% podatku
   def main(args: Array[String]): Unit = {
   }
 }
