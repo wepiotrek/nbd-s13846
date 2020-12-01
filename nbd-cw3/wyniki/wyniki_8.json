@@ -1,0 +1,73 @@
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("d4bab388-adc6-4394-b07e-26772c8dcd56") }
+MongoDB server version: 4.4.2
+{ "acknowledged" : true, "matchedCount" : 0, "modifiedCount" : 0 }
+[
+	{
+		"_id" : ObjectId("5fc6b682434d4c09329a28ab"),
+		"sex" : "Male",
+		"first_name" : "Gary",
+		"last_name" : "Wallace",
+		"job" : "VP Quality Control",
+		"email" : "gwallace1gl@zimbio.com",
+		"location" : {
+			"city" : "Moskwa"
+		},
+		"description" : "proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus",
+		"height" : "171.54",
+		"weight" : "68.32",
+		"birth_date" : "2011-01-29T02:43:19Z",
+		"nationality" : "Russia",
+		"credit" : [
+			{
+				"type" : "jcb",
+				"number" : "201810476188726",
+				"currency" : "HNL",
+				"balance" : "6950.39"
+			},
+			{
+				"type" : "mastercard",
+				"number" : "201995576146342",
+				"currency" : "AFN",
+				"balance" : "5442.17"
+			},
+			{
+				"type" : "jcb",
+				"number" : "201552864013351",
+				"currency" : "IDR",
+				"balance" : "4714.67"
+			},
+			{
+				"type" : "jcb",
+				"number" : "5048378285089879",
+				"currency" : "CNY",
+				"balance" : "5803.17"
+			}
+		]
+	},
+	{
+		"_id" : ObjectId("5fc6b682434d4c09329a3a8b"),
+		"sex" : "Male",
+		"first_name" : "George",
+		"last_name" : "Rogers",
+		"job" : "Accounting Assistant I",
+		"email" : "grogers4zp@va.gov",
+		"location" : {
+			"city" : "Moskwa"
+		},
+		"description" : "primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus",
+		"height" : "155.8",
+		"weight" : "63.84",
+		"birth_date" : "1997-07-27T06:21:11Z",
+		"nationality" : "Russia",
+		"credit" : [
+			{
+				"type" : "jcb",
+				"number" : "374622993012797",
+				"currency" : "CAD",
+				"balance" : "4829.62"
+			}
+		]
+	}
+]
