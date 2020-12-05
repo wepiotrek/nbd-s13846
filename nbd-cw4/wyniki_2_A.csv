@@ -1,0 +1,622 @@
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("3eb1cec3-1857-483b-95bd-ab6b80e20526") }
+MongoDB server version: 4.4.2
+[
+	{
+		"Srodki: " : 534069.77,
+		"waluta" : "DOP"
+	},
+	{
+		"Srodki: " : 758807.63,
+		"waluta" : "ILS"
+	},
+	{
+		"Srodki: " : 294843.38,
+		"waluta" : "BDT"
+	},
+	{
+		"Srodki: " : 13053.5,
+		"waluta" : "GYD"
+	},
+	{
+		"Srodki: " : 27425502.27,
+		"waluta" : "CNY"
+	},
+	{
+		"Srodki: " : 2084269.88,
+		"waluta" : "THB"
+	},
+	{
+		"Srodki: " : 220627.42,
+		"waluta" : "LTL"
+	},
+	{
+		"Srodki: " : 100447.58,
+		"waluta" : "KHR"
+	},
+	{
+		"Srodki: " : 8223429.02,
+		"waluta" : "PHP"
+	},
+	{
+		"Srodki: " : 21354.39,
+		"waluta" : "ANG"
+	},
+	{
+		"Srodki: " : 639977.48,
+		"waluta" : "MNT"
+	},
+	{
+		"Srodki: " : 16809.66,
+		"waluta" : "KYD"
+	},
+	{
+		"Srodki: " : 26269.07,
+		"waluta" : "LSL"
+	},
+	{
+		"Srodki: " : 39048.74,
+		"waluta" : "ISK"
+	},
+	{
+		"Srodki: " : 18424.47,
+		"waluta" : "TOP"
+	},
+	{
+		"Srodki: " : 161706,
+		"waluta" : "SAR"
+	},
+	{
+		"Srodki: " : 687770.55,
+		"waluta" : "PKR"
+	},
+	{
+		"Srodki: " : 59113.090000000004,
+		"waluta" : "SZL"
+	},
+	{
+		"Srodki: " : 24172.940000000002,
+		"waluta" : "INR"
+	},
+	{
+		"Srodki: " : 24296.690000000002,
+		"waluta" : "BZD"
+	},
+	{
+		"Srodki: " : 177401.05,
+		"waluta" : "TJS"
+	},
+	{
+		"Srodki: " : 363643.61,
+		"waluta" : "PAB"
+	},
+	{
+		"Srodki: " : 82203.48,
+		"waluta" : "SOS"
+	},
+	{
+		"Srodki: " : 5118.97,
+		"waluta" : "FKP"
+	},
+	{
+		"Srodki: " : 7282.73,
+		"waluta" : "AWG"
+	},
+	{
+		"Srodki: " : 231996.14,
+		"waluta" : "UYU"
+	},
+	{
+		"Srodki: " : 436912.01,
+		"waluta" : "MKD"
+	},
+	{
+		"Srodki: " : 26720.5,
+		"waluta" : "BBD"
+	},
+	{
+		"Srodki: " : 334544.06,
+		"waluta" : "CRC"
+	},
+	{
+		"Srodki: " : 44044.89,
+		"waluta" : "TTD"
+	},
+	{
+		"Srodki: " : 61445.270000000004,
+		"waluta" : "PGK"
+	},
+	{
+		"Srodki: " : 113099.62,
+		"waluta" : "TMT"
+	},
+	{
+		"Srodki: " : 817695.24,
+		"waluta" : "HNL"
+	},
+	{
+		"Srodki: " : 16700089.28,
+		"waluta" : "EUR"
+	},
+	{
+		"Srodki: " : 210496.68,
+		"waluta" : "JOD"
+	},
+	{
+		"Srodki: " : 44471.32,
+		"waluta" : "MRO"
+	},
+	{
+		"Srodki: " : 603855.99,
+		"waluta" : "TZS"
+	},
+	{
+		"Srodki: " : 661834.75,
+		"waluta" : "AFN"
+	},
+	{
+		"Srodki: " : 7782.66,
+		"waluta" : "BND"
+	},
+	{
+		"Srodki: " : 108940.64,
+		"waluta" : "CHF"
+	},
+	{
+		"Srodki: " : 528336.14,
+		"waluta" : "EGP"
+	},
+	{
+		"Srodki: " : 37711.08,
+		"waluta" : "BTN"
+	},
+	{
+		"Srodki: " : 201447.71,
+		"waluta" : "JMD"
+	},
+	{
+		"Srodki: " : 583657.38,
+		"waluta" : "YER"
+	},
+	{
+		"Srodki: " : 138004.7,
+		"waluta" : "KMF"
+	},
+	{
+		"Srodki: " : 817403.54,
+		"waluta" : "RSD"
+	},
+	{
+		"Srodki: " : 18414.53,
+		"waluta" : "TRY"
+	},
+	{
+		"Srodki: " : 602964.09,
+		"waluta" : "AMD"
+	},
+	{
+		"Srodki: " : 666533.65,
+		"waluta" : "MYR"
+	},
+	{
+		"Srodki: " : 377675.55,
+		"waluta" : "MGA"
+	},
+	{
+		"Srodki: " : 240664.87,
+		"waluta" : "NIO"
+	},
+	{
+		"Srodki: " : 584923.2,
+		"waluta" : "KZT"
+	},
+	{
+		"Srodki: " : 82506.07,
+		"waluta" : "KWD"
+	},
+	{
+		"Srodki: " : 23023.02,
+		"waluta" : "HKD"
+	},
+	{
+		"Srodki: " : 222518.63,
+		"waluta" : "KPW"
+	},
+	{
+		"Srodki: " : 146972.04,
+		"waluta" : "BWP"
+	},
+	{
+		"Srodki: " : 73222.48,
+		"waluta" : "GNF"
+	},
+	{
+		"Srodki: " : 67582.8,
+		"waluta" : "AOA"
+	},
+	{
+		"Srodki: " : 338447.54,
+		"waluta" : "NZD"
+	},
+	{
+		"Srodki: " : 182130.48,
+		"waluta" : "MUR"
+	},
+	{
+		"Srodki: " : 804397.05,
+		"waluta" : "IRR"
+	},
+	{
+		"Srodki: " : 5337.77,
+		"waluta" : "MOP"
+	},
+	{
+		"Srodki: " : 55420.34,
+		"waluta" : "NAD"
+	},
+	{
+		"Srodki: " : 501467.35,
+		"waluta" : "SYP"
+	},
+	{
+		"Srodki: " : 32068.850000000002,
+		"waluta" : "MVR"
+	},
+	{
+		"Srodki: " : 22698.46,
+		"waluta" : "BHD"
+	},
+	{
+		"Srodki: " : 1282147.14,
+		"waluta" : "NGN"
+	},
+	{
+		"Srodki: " : 5609900,
+		"waluta" : "BRL"
+	},
+	{
+		"Srodki: " : 157276.96,
+		"waluta" : "GEL"
+	},
+	{
+		"Srodki: " : 15619806.11,
+		"waluta" : "IDR"
+	},
+	{
+		"Srodki: " : 2644211.16,
+		"waluta" : "CZK"
+	},
+	{
+		"Srodki: " : 42256.53,
+		"waluta" : "SSP"
+	},
+	{
+		"Srodki: " : 686489.84,
+		"waluta" : "BYR"
+	},
+	{
+		"Srodki: " : 86305.05,
+		"waluta" : "LAK"
+	},
+	{
+		"Srodki: " : 1547673.09,
+		"waluta" : "MXN"
+	},
+	{
+		"Srodki: " : 1973241.6,
+		"waluta" : "CAD"
+	},
+	{
+		"Srodki: " : 736336.77,
+		"waluta" : "XAF"
+	},
+	{
+		"Srodki: " : 14734.27,
+		"waluta" : "DJF"
+	},
+	{
+		"Srodki: " : 3706221.0100000002,
+		"waluta" : "SEK"
+	},
+	{
+		"Srodki: " : 588368.85,
+		"waluta" : "GTQ"
+	},
+	{
+		"Srodki: " : 629053.41,
+		"waluta" : "VEF"
+	},
+	{
+		"Srodki: " : 9321.43,
+		"waluta" : "FJD"
+	},
+	{
+		"Srodki: " : 243512.86,
+		"waluta" : "GBP"
+	},
+	{
+		"Srodki: " : 88106.83,
+		"waluta" : "MWK"
+	},
+	{
+		"Srodki: " : 4854.36,
+		"waluta" : "STD"
+	},
+	{
+		"Srodki: " : 11557.6,
+		"waluta" : "RON"
+	},
+	{
+		"Srodki: " : 21598.47,
+		"waluta" : "ERN"
+	},
+	{
+		"Srodki: " : 43326.06,
+		"waluta" : "LBP"
+	},
+	{
+		"Srodki: " : 173318.73,
+		"waluta" : "MDL"
+	},
+	{
+		"Srodki: " : 54883.45,
+		"waluta" : "LRD"
+	},
+	{
+		"Srodki: " : 9983,
+		"waluta" : "SBD"
+	},
+	{
+		"Srodki: " : 2584824.9,
+		"waluta" : "JPY"
+	},
+	{
+		"Srodki: " : 146606.65,
+		"waluta" : "NPR"
+	},
+	{
+		"Srodki: " : 8532474.09,
+		"waluta" : "RUB"
+	},
+	{
+		"Srodki: " : 932463.66,
+		"waluta" : "ZAR"
+	},
+	{
+		"Srodki: " : 225111.38999999998,
+		"waluta" : "LKR"
+	},
+	{
+		"Srodki: " : 45782.33,
+		"waluta" : "BIF"
+	},
+	{
+		"Srodki: " : 415965.47,
+		"waluta" : "BAM"
+	},
+	{
+		"Srodki: " : 43299.96,
+		"waluta" : "RWF"
+	},
+	{
+		"Srodki: " : 222452.28,
+		"waluta" : "DKK"
+	},
+	{
+		"Srodki: " : 142978.86,
+		"waluta" : "ZWL"
+	},
+	{
+		"Srodki: " : 160940.53,
+		"waluta" : "ZMW"
+	},
+	{
+		"Srodki: " : 12820.48,
+		"waluta" : "SGD"
+	},
+	{
+		"Srodki: " : 127317.75,
+		"waluta" : "SDG"
+	},
+	{
+		"Srodki: " : 433497.06,
+		"waluta" : "KRW"
+	},
+	{
+		"Srodki: " : 223284.76,
+		"waluta" : "MMK"
+	},
+	{
+		"Srodki: " : 345203.25,
+		"waluta" : "UGX"
+	},
+	{
+		"Srodki: " : 52973.33,
+		"waluta" : "AED"
+	},
+	{
+		"Srodki: " : 394880.17,
+		"waluta" : "AZN"
+	},
+	{
+		"Srodki: " : 116224.9,
+		"waluta" : "SLL"
+	},
+	{
+		"Srodki: " : 23188.93,
+		"waluta" : "VUV"
+	},
+	{
+		"Srodki: " : 36358.92,
+		"waluta" : "QAR"
+	},
+	{
+		"Srodki: " : 215992.13,
+		"waluta" : "HTG"
+	},
+	{
+		"Srodki: " : 496641.83,
+		"waluta" : "BGN"
+	},
+	{
+		"Srodki: " : 5077045.36,
+		"waluta" : "PLN"
+	},
+	{
+		"Srodki: " : 176827.79,
+		"waluta" : "KGS"
+	},
+	{
+		"Srodki: " : 510936.11,
+		"waluta" : "MAD"
+	},
+	{
+		"Srodki: " : 269798.11,
+		"waluta" : "KES"
+	},
+	{
+		"Srodki: " : 92068.64,
+		"waluta" : "MZN"
+	},
+	{
+		"Srodki: " : 514413.88,
+		"waluta" : "CUP"
+	},
+	{
+		"Srodki: " : 325755.9,
+		"waluta" : "TND"
+	},
+	{
+		"Srodki: " : 1395639.11,
+		"waluta" : "VND"
+	},
+	{
+		"Srodki: " : 157963.9,
+		"waluta" : "GMD"
+	},
+	{
+		"Srodki: " : 14797.58,
+		"waluta" : "SCR"
+	},
+	{
+		"Srodki: " : 242667.03,
+		"waluta" : "AUD"
+	},
+	{
+		"Srodki: " : 178097.37,
+		"waluta" : "CDF"
+	},
+	{
+		"Srodki: " : 934043.61,
+		"waluta" : "XOF"
+	},
+	{
+		"Srodki: " : 132926.01,
+		"waluta" : "XPF"
+	},
+	{
+		"Srodki: " : 165192.16,
+		"waluta" : "HUF"
+	},
+	{
+		"Srodki: " : 83159.05,
+		"waluta" : "GHS"
+	},
+	{
+		"Srodki: " : 388620.14,
+		"waluta" : "CLP"
+	},
+	{
+		"Srodki: " : 37654,
+		"waluta" : "TWD"
+	},
+	{
+		"Srodki: " : 269686.62,
+		"waluta" : "ETB"
+	},
+	{
+		"Srodki: " : 55361.39,
+		"waluta" : "BSD"
+	},
+	{
+		"Srodki: " : 19686.77,
+		"waluta" : "SRD"
+	},
+	{
+		"Srodki: " : 30739.64,
+		"waluta" : "WST"
+	},
+	{
+		"Srodki: " : 2356548.02,
+		"waluta" : "PEN"
+	},
+	{
+		"Srodki: " : 689403.5,
+		"waluta" : "HRK"
+	},
+	{
+		"Srodki: " : 12166.2,
+		"waluta" : "DZD"
+	},
+	{
+		"Srodki: " : 651597.87,
+		"waluta" : "ALL"
+	},
+	{
+		"Srodki: " : 2505840.72,
+		"waluta" : "UAH"
+	},
+	{
+		"Srodki: " : 330309.61,
+		"waluta" : "UZS"
+	},
+	{
+		"Srodki: " : 760113.61,
+		"waluta" : "NOK"
+	},
+	{
+		"Srodki: " : 4086760.81,
+		"waluta" : "USD"
+	},
+	{
+		"Srodki: " : 167531.82,
+		"waluta" : "IQD"
+	},
+	{
+		"Srodki: " : 87008.08,
+		"waluta" : "OMR"
+	},
+	{
+		"Srodki: " : 197545.65,
+		"waluta" : "LYD"
+	},
+	{
+		"Srodki: " : 46538.51,
+		"waluta" : "CVE"
+	},
+	{
+		"Srodki: " : 5189,
+		"waluta" : "BMD"
+	},
+	{
+		"Srodki: " : 1940347.24,
+		"waluta" : "ARS"
+	},
+	{
+		"Srodki: " : 1976194.79,
+		"waluta" : "COP"
+	},
+	{
+		"Srodki: " : 168150.01,
+		"waluta" : "XCD"
+	},
+	{
+		"Srodki: " : 257433.54,
+		"waluta" : "BOB"
+	},
+	{
+		"Srodki: " : 286515.48,
+		"waluta" : "PYG"
+	}
+]
