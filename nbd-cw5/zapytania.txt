@@ -1,0 +1,6 @@
+1. MATCH (movie:Movie) RETURN movie
+2. MATCH (hugo:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(f) RETURN hugo,f
+3. MATCH (hugo:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(f)<-[:DIRECTED]-(d) RETURN hugo,f,d
+4. MATCH (hugo:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(f)<-[:ACTED_IN]-(a) RETURN hugo,f,a
+5. MATCH (f:Movie {title:"The Matrix"})<-[:ACTED_IN]-(a)-[:ACTED_IN]->(fi) return f,a,fi
+6. MATCH (p:Person)-[r:ACTED_IN]->(f) WITH p,count(r) AS fc WHERE fc > 0 RETURN p,fc
