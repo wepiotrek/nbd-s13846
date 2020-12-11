@@ -7,4 +7,4 @@
 - Ćwiczenia 5 (WIP) - [WYNIKI SVG/JSON](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw5)
 - Ćwiczenia 6-10 - (TODO 😢)
 
-Test 123
+Test 1234
