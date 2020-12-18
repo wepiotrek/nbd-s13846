@@ -4,3 +4,53 @@
 4. MATCH (hugo:Person {name:"Hugo Weaving"})-[:ACTED_IN]->(f)<-[:ACTED_IN]-(a) RETURN hugo,f,a
 5. MATCH (f:Movie {title:"The Matrix"})<-[:ACTED_IN]-(a)-[:ACTED_IN]->(fi) return f,a,fi
 6. MATCH (p:Person)-[r:ACTED_IN]->(f) WITH p,count(r) AS fc WHERE fc > 0 RETURN p,fc
+7. MATCH (p:Person)-[:DIRECTED]->(f)<-[:WROTE]-(p) RETURN p,f
+8. MATCH (p1:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(f)<-[:ACTED_IN]-(p2:Person {name: "Keanu Reeves"}) RETURN f
+9.
+//reżyser
+CREATE (o1:Person { name: "Joe Johnston", born: '1950' })
+//scenarzyści
+CREATE (o2:Person { name: "Christopher Markus", born: '1970' }) 
+CREATE (o3:Person { name: "Stephen McFeely", born: '1969' })
+//aktorzy
+CREATE (o4:Person { name: "Chris Evans", born: '1981' })
+CREATE (o5:Person { name: "Hayley Atwell", born: '1982' })
+CREATE (o6:Person { name: "Sebastian Stan", born: '1982' })
+CREATE (o7:Person { name: "Tommy Lee Jones", born: '1946' })
+CREATE (o8:Person { name: "Hugo Weaving", born: '1960' })
+CREATE (o9:Person { name: "Dominic Cooper", born: '1978' })
+CREATE (o10:Person { name: "Richard Armitage", born: '1971' })
+CREATE (o11:Person { name: "Stanley Tucci", born: '1960' })
+CREATE (o12:Person { name: "Samuel L. Jackson", born: '1948' })
+CREATE (o13:Person { name: "Toby Jones", born: '1966' })
+CREATE (o14:Person { name: "Neal McDonough", born: '1966' })
+CREATE (o15:Person { name: "Derek Luke", born: '1974' })
+CREATE (o16:Person { name: "Kenneth Choi", born: '1971' })
+CREATE (o17:Person { name: "JJ Feild", born: '1978' })
+CREATE (o18:Person { name: "Lex Shrapnel", born: '1979' })
+//film
+CREATE (fn:Movie {title:'Captain America: The First Avenger', released:2011, tagline:'Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.'}) 
+/////////////////////////////////////
+CREATE
+	(o1)-[:DIRECTED]->(fn),
+	(o2)-[:WROTE]->(fn),
+	(o3)-[:WROTE]->(fn),
+	(o4)-[:ACTED_IN {roles:['Captain America/Steve Rogers']}]->(fn),
+	(o5)-[:ACTED_IN {roles:['Peggy Carter']}]->(fn),
+	(o6)-[:ACTED_IN {roles:["James Buchanan 'Bucky' Barnes"]}]->(fn),
+	(o7)-[:ACTED_IN {roles:['Colonel Chester Phillips']}]->(fn),
+	(o8)-[:ACTED_IN {roles:['Johann Schmidt / Red Skull']}]->(fn),
+	(o9)-[:ACTED_IN {roles:['Howard Stark']}]->(fn),
+	(o10)-[:ACTED_IN {roles:['Heinz Kruger']}]->(fn),
+	(o11)-[:ACTED_IN {roles:['Dr. Abraham Erskine']}]->(fn),
+	(o12)-[:ACTED_IN {roles:['Nick Fury']}]->(fn),
+	(o13)-[:ACTED_IN {roles:['Dr. Arnim Zola']}]->(fn),
+	(o14)-[:ACTED_IN {roles:["Timothy 'Dum Dum' Dugan"]}]->(fn),
+	(o15)-[:ACTED_IN {roles:['Gabe Jones']}]->(fn),
+	(o16)-[:ACTED_IN {roles:['Jim Morita']}]->(fn),
+	(o17)-[:ACTED_IN {roles:['James Montgomery Falsworth']}]->(fn),
+	(o18)-[:ACTED_IN {roles:['Gilmore Hodge']}]->(fn)
+	WITH fn as movie
+
+MATCH (movie)<-[:DIRECTED]-(d),(movie)<-[:ACTED_IN]-(a),(movie)<-[:WROTE]-(w) RETURN movie,a,d,w
+

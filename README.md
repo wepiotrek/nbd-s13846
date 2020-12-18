@@ -4,5 +4,5 @@
 - Ćwiczenia 2 - [PLIK Z ROZWIĄZANIEM](https://github.com/wepiotrek/nbd-s13846/blob/master/src/Cwiczenia2.scala)
 - Ćwiczenia 3 - [ZAPYTANIA](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw3) | [WYNIKI](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw3/wyniki)
 - Ćwiczenia 4 - [ZAPYTANIA/WYNIKI](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw4)
-- Ćwiczenia 5 (WIP) - [WYNIKI SVG/JSON](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw5)
+- Ćwiczenia 5 - [WYNIKI SVG/JSON](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw5)
 - Ćwiczenia 6-10 - (TODO 😢)
