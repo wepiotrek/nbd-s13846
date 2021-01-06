@@ -1,0 +1,121 @@
+﻿[
+  {
+    "droga": {
+"start": {
+"identity": 205,
+"labels": [
+          "Airport"
+        ],
+"properties": {
+"name": "LAX"
+        }
+      },
+"end": {
+"identity": 270,
+"labels": [
+          "Airport"
+        ],
+"properties": {
+"name": "DAY"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 205,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "LAX"
+            }
+          },
+          "relationship": {
+"identity": 1950,
+"start": 207,
+"end": 205,
+"type": "CONNECTION",
+"properties": {
+"date": "11/30/2015 23:33:29",
+"class": "economy",
+"price": 1365.75
+            }
+          },
+          "end": {
+"identity": 207,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "ORD"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 207,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "ORD"
+            }
+          },
+          "relationship": {
+"identity": 2082,
+"start": 208,
+"end": 207,
+"type": "CONNECTION",
+"properties": {
+"date": "11/29/2015 03:57:27",
+"class": "economy",
+"price": 263.25
+            }
+          },
+          "end": {
+"identity": 208,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "MSP"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 208,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "MSP"
+            }
+          },
+          "relationship": {
+"identity": 2724,
+"start": 208,
+"end": 270,
+"type": "CONNECTION",
+"properties": {
+"date": "11/23/2015 09:37:48",
+"class": "economy",
+"price": 447.75
+            }
+          },
+          "end": {
+"identity": 270,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "DAY"
+            }
+          }
+        }
+      ],
+"length": 3.0
+    },
+    "cena": 2076.75
+  }
+]
