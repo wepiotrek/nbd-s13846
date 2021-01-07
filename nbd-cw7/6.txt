@@ -1,0 +1,7 @@
+C:\Users\piotr>curl -XDELETE -i %baza%AR
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:27:53 GMT
+Content-Type: application/json
+Content-Length: 0

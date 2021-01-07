@@ -1,0 +1,7 @@
+C:\Users\piotr>curl -XPUT -i -H %naglowek% -d '{"nazwa":"Wielka Brytania","szerokoscGeo":51.5073219,"dlugoscGeo":-0.1276474,"UE":false}' %baza%UK
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:26:54 GMT
+Content-Type: application/json
+Content-Length: 0

@@ -1,0 +1,13 @@
+C:\Users\piotr>curl -i %baza%PL
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVr72mGsAEUpkymNlWPE06yZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s13846>; rel="up"
+Last-Modified: Thu, 07 Jan 2021 01:53:44 GMT
+ETag: "4TWPSZ3qNgZZmJ51BdrYZl"
+Date: Thu, 07 Jan 2021 02:11:45 GMT
+Content-Type: application/json
+Content-Length: 70
+
+'{nazwa:Polska,szerokoscGeo:52.2319581,dlugoscGeo:21.0067249,UE:true}'

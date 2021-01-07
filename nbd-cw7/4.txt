@@ -1,0 +1,7 @@
+C:\Users\piotr>curl -XPUT -i -H %naglowek% -d '{"nazwa":"Japonia","szerokoscGeo":35.6828387,"dlugoscGeo":139.7594549}' %baza%JP
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:31:52 GMT
+Content-Type: application/json
+Content-Length: 0

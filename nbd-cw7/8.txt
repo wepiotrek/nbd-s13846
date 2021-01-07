@@ -1,0 +1,8 @@
+C:\Users\piotr>curl -XPOST -i -H %naglowek% -d '{"pi":3.14159265359}' %baza:~0,-1%
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s13846/keys/Yst6xGn6eqix8RxJnHK3fpWFCil
+Date: Thu, 07 Jan 2021 02:40:23 GMT
+Content-Type: application/json
+Content-Length: 0

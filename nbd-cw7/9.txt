@@ -1,0 +1,13 @@
+C:\Users\piotr>curl -i %baza%Yst6xGn6eqix8RxJnHK3fpWFCil
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVr523f0PIpTImMfKMP1D1k2+LAA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s13846>; rel="up"
+Last-Modified: Thu, 07 Jan 2021 02:40:23 GMT
+ETag: "6rRgR6DXxQmd1nvWZTciWZ"
+Date: Thu, 07 Jan 2021 02:42:40 GMT
+Content-Type: application/json
+Content-Length: 20
+
+'{pi:3.14159265359}'

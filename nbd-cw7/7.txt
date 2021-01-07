@@ -1,0 +1,8 @@
+C:\Users\piotr>curl -i %baza%AR
+HTTP/1.1 404 Object Not Found
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:28:20 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found

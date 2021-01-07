@@ -1,0 +1,46 @@
+#UNIX/LINUX:
+#0. Przygotowanie zmiennych
+naglowek="Content-Type: application/json"&&baza=http://localhost:8098/buckets/s13846/keys/
+#1. Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości, gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów.
+curl -XPUT -i -H "$naglowek" -d '{"nazwa":"Polska","szerokoscGeo":52.2319581,"dlugoscGeo":21.0067249,"UE":true}' "${baza}PL"
+#(...)
+
+REM DOS/WINDOWS:
+REM 0. Przygotowanie zmiennych
+set naglowek="Content-Type: application/json" && set baza=http://localhost:8098/buckets/s13846/keys/
+REM 1. Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości, gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów.
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Polska","szerokoscGeo":52.2319581,"dlugoscGeo":21.0067249,"UE":true}' %baza%PL
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Niemcy","szerokoscGeo":52.5015217,"dlugoscGeo":13.4025498,"UE":true}' %baza%DE
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Wielka Brytania","szerokoscGeo":51.5073219,"dlugoscGeo":-0.1276474,"UE":true}' %baza%UK
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Japonia","szerokoscGeo":35.6828387,"dlugoscGeo":139.7594549,"UE":false}' %baza%JP
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Argentyna","szerokoscGeo":-34.6075682,"dlugoscGeo":-58.4370894,"UE":false}' %baza%AR
+
+REM 2. Pobierz z bazy jedną z dodanych przez Ciebie wartości.
+curl -i %baza%PL
+
+REM 3. Zmodyfikuj jedną z wartości – dodając dodatkowe pole do dokumentu.
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Polska","nrKierunkowy":48,"szerokoscGeo":52.2319581,"dlugoscGeo":21.0067249,"UE":true}' %baza%PL
+
+REM 4. Zmodyfikuj jedną z wartości – usuwając jedną pole z wybranego dokumentu.
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Argentyna","szerokoscGeo":-34.6075682,"dlugoscGeo":-58.4370894}' %baza%AR
+
+REM 5. Zmodyfikuj jedną z wartości – zmieniając wartość jednego z pól.
+curl -XPUT -i -H %naglowek% -d '{"nazwa":"Wielka Brytania","szerokoscGeo":51.5073219,"dlugoscGeo":-0.1276474,"UE":false}' %baza%UK
+
+REM 6. Usuń jeden z dokumentów z bazy.
+curl -XDELETE -i %baza%AR
+
+REM 7. Spróbuj pobrać z bazy wartość, która nie istnieje w tej bazie.
+curl -i %baza%AR
+
+REM 8. Dodaj do bazy 1 dokument json (zawierający 1 pole), ale nie specyfikuj klucza.
+curl -XPOST -i -H %naglowek% -d '{"pi":3.14159265359}' %baza:~0,-1%
+
+REM 9. Pobierz z bazy element z zadania 8.
+curl -i %baza%Yst6xGn6eqix8RxJnHK3fpWFCil
+
+REM 10. Usuń z bazy element z zadania 8.
+curl -XDELETE -i %baza%Yst6xGn6eqix8RxJnHK3fpWFCil
+
+REM 11. Sprzątanie po sobie zmiennych
+set naglowek= && set baza=

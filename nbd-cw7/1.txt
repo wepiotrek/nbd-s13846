@@ -1,0 +1,43 @@
+C:\Users\piotr>curl -XPUT -i -H %naglowek% -d '{"nazwa":"Polska","szerokoscGeo":52.2319581,"dlugoscGeo":21.0067249,"UE":true}' %baza%PL
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 01:53:44 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+C:\Users\piotr>curl -XPUT -i -H %naglowek% -d '{"nazwa":"Niemcy","szerokoscGeo":52.5015217,"dlugoscGeo":13.4025498,"UE":true}' %baza%DE
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:02:48 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+C:\Users\piotr>curl -XPUT -i -H %naglowek% -d '{"nazwa":"Wielka Brytania","szerokoscGeo":51.5073219,"dlugoscGeo":-0.1276474,"UE":true}' %baza%UK
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:03:07 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+C:\Users\piotr>curl -XPUT -i -H %naglowek% -d '{"nazwa":"Japonia","szerokoscGeo":35.6828387,"dlugoscGeo":139.7594549,"UE":false}' %baza%JP
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:03:18 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+C:\Users\piotr>curl -XPUT -i -H %naglowek% -d '{"nazwa":"Argentyna","szerokoscGeo":-34.6075682,"dlugoscGeo":-58.4370894,"UE":false}' %baza%AR
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 07 Jan 2021 02:03:33 GMT
+Content-Type: application/json
+Content-Length: 0
