@@ -5,37 +5,35 @@ class Container[A] (private val content: A){
 
 trait Maybe[A] {
   def applyFunction[R, X](f: A => R): Maybe[R]
-  //def getOrElse[E](e: E): Either[A, E]
+  def getOrElse[E](e: E): Any
 }
 
 class No extends Maybe[Nothing] {
   override def applyFunction[R, X](f: Nothing => R): Maybe[R] = this.asInstanceOf[Maybe[R]]
-  //override def getOrElse[E](e: E): Either[Nothing, E] = Right(e)
-  def getOrElse[E](e: E): E = e
+  override def getOrElse[E](e: E): E = e
 
 }
 
 class Yes[A] (val a: A) extends Maybe[A]  {
   override def applyFunction[R, X](f: A => R): Maybe[R] = new Yes[R](f(a))
-  //override def getOrElse[E](e: E): Either[A, E] = Left(a)
-  def getOrElse[E](e: E): A = a
+  override def getOrElse[E](e: E): A = a
 }
 
 object Cwiczenia9 {
   def main(args: Array[String]): Unit = {
     //zadanie 1
     val container = new Container("Piotrek")
-    container.applyFunction(println)
+    container.applyFunction(println) //Piotrek
     //zadanie 2
     val no = new No
     val yes = new Yes(5)
-    println(no.isInstanceOf[Maybe[_]])
-    println(yes.isInstanceOf[Maybe[_]])
+    println(no.isInstanceOf[Maybe[_]]) //true
+    println(yes.isInstanceOf[Maybe[_]]) //true
     //zadanie 3
-    println(no.applyFunction(println))
-    yes.applyFunction(println)
+    println(no.applyFunction(println)) //No@2d6a9952
+    yes.applyFunction(println) //5
     //zadanie 4
-    println(no.getOrElse(2))
-    println(yes.getOrElse("N/A"))
+    println(no.getOrElse(2)) //2
+    println(yes.getOrElse("N/A")) //5
   }
 }

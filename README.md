@@ -7,8 +7,8 @@
 ### Scala
 - Ćwiczenia 1  - [PLIK Z ROZWIĄZANIEM](https://github.com/wepiotrek/nbd-s13846/blob/master/src/Cwiczenia1.scala) [![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)](#)
 - Ćwiczenia 2 - [PLIK Z ROZWIĄZANIEM](https://github.com/wepiotrek/nbd-s13846/blob/master/src/Cwiczenia2.scala) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
-- Ćwiczenia 9 [PLIK Z ROZWIĄZANIEM](https://github.com/wepiotrek/nbd-s13846/blob/master/src/Cwiczenia9.scala) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
-- Ćwiczenia 10 (TODO 😢) ![Postęp](https://img.shields.io/badge/Zrobiono:-0%25-red)
+- Ćwiczenia 9 - [PLIK Z ROZWIĄZANIEM](https://github.com/wepiotrek/nbd-s13846/blob/master/src/Cwiczenia9.scala) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
+- Ćwiczenia 10 - [PLIK Z ROZWIĄZANIEM](https://github.com/wepiotrek/nbd-s13846/blob/master/src/Cwiczenia10.scala) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
 ### MongoDB
 - Ćwiczenia 3 - [ZAPYTANIA](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw3) | [WYNIKI](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw3/wyniki) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
 - Ćwiczenia 4 - [ZAPYTANIA/WYNIKI](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw4) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
