@@ -17,4 +17,4 @@
 - Ćwiczenia 6 - [ZAPYTANIA](https://github.com/wepiotrek/nbd-s13846/blob/master/nbd-cw6/zapytania.txt) | [WYNIKI SVG/JSON](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw6) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
 ### Riak
 - Ćwiczenia 7 - [POLECENIA](https://github.com/wepiotrek/nbd-s13846/blob/master/nbd-cw7/polecenia.txt) | [ODPOWIEDZI](https://github.com/wepiotrek/nbd-s13846/tree/master/nbd-cw7) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
-- Ćwiczenia 8 (TODO 😢) ![Postęp](https://img.shields.io/badge/Zrobiono:-10%25-red)
+- Ćwiczenia 8 - [DOKUMENTACJA](https://github.com/wepiotrek/nbd-s13846/blob/master/nbd-cw8/README.md) | [ROZWIĄZANIE](https://github.com/wepiotrek/nbd-s13846/blob/master/nbd-cw8/nbd8.py) ![Postęp](https://img.shields.io/badge/Zrobiono:-100%25-success)
