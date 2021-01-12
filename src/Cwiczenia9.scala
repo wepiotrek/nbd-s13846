@@ -5,18 +5,17 @@ class Container[A] (private val content: A){
 
 trait Maybe[A] {
   def applyFunction[R, X](f: A => R): Maybe[R]
-  def getOrElse[E](e: E): Any
+  def getOrElse[B >: A](default: => B): B
 }
 
 class No extends Maybe[Nothing] {
   override def applyFunction[R, X](f: Nothing => R): Maybe[R] = this.asInstanceOf[Maybe[R]]
-  override def getOrElse[E](e: E): E = e
-
+  override def getOrElse[B >: Nothing](default: => B): B = default
 }
 
 class Yes[A] (val a: A) extends Maybe[A]  {
   override def applyFunction[R, X](f: A => R): Maybe[R] = new Yes[R](f(a))
-  override def getOrElse[E](e: E): A = a
+  override def getOrElse[B >: A](default: => B): B = a
 }
 
 object Cwiczenia9 {
