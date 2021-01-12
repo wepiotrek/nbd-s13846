@@ -1,24 +1,23 @@
 object Cwiczenia10 {
   trait Maybe[A]{
     def applyFunction[R, X](f: A => R): Maybe[R]
-    def getOrElse[E](e: E): Any
+    def getOrElse[B >: A](default: => B): B
     def map[B](f: A => B):Maybe[B]
     def flatMap[B](f: A => B):Maybe[Any] //Yes -> Maybe[List[Any]], No ->Maybe[Any]
   }
 
   class No extends Maybe[Nothing] {
     override def applyFunction[R, X](f: Nothing => R): Maybe[R] = this.asInstanceOf[Maybe[R]]
-    override def getOrElse[E](e: E): E = e
-    override def map[B](f: Nothing => B): Maybe[B] = f(???).asInstanceOf[Maybe[B]]
-    override def flatMap[B](f: Nothing => B): Maybe[Any] = new Yes(List(f(???).toString).flatten)
+    override def getOrElse[B >: Nothing](default: => B): B = default
+    override def map[B](f: Nothing => B): Maybe[B] = f.asInstanceOf[Maybe[B]]
+    override def flatMap[B](f: Nothing => B): Maybe[Any] = new Yes(List(f.toString).flatten)
   }
 
   class Yes[A] (val a: A) extends Maybe[A]  {
     override def applyFunction[R, X](f: A => R): Maybe[R] = new Yes[R](f(a))
-    override def getOrElse[E](e: E): A = a
+    override def getOrElse[B >: A](default: => B): B = a
     override def map[B](f: A => B): Maybe[B] = new Yes(f(a))
     override def flatMap[B](f: A => B): Maybe[Any] = new Yes(List(f(a).toString).flatten)
-
   }
   def main(args: Array[String]): Unit = {
     //Zadanie 1
